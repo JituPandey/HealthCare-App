@@ -2,7 +2,7 @@
 
 A modern, responsive healthcare web application with appointment booking and contact management system.
 
-![Healthcare+ Banner](https://img.shields.io/badge/Healthcare+-Web%20App-blue?style=for-the-badge&logo=medical)
+![Healthcare+ Banner](https://jituhealth.netlify.app/)
 
 ## ✨ Features
 
