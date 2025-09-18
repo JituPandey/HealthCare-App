@@ -2,7 +2,7 @@
 
 A modern, responsive healthcare web application with appointment booking and contact management system.
 
-![Healthcare+ Banner](https://jituhealth.netlify.app/)
+Link:(https://jituhealth.netlify.app/)
 
 ## ✨ Features
 
