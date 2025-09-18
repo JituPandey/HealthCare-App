@@ -1,0 +1,4 @@
+/api/appointments  /.netlify/functions/appointments  200
+/api/contacts      /.netlify/functions/contacts     200  
+/api/admin/stats   /.netlify/functions/admin-stats  200
+/*                 /index.html                      200

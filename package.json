@@ -1,17 +1,19 @@
 {
   "name": "healthcare-app",
   "version": "1.0.0",
-  "description": "Simple healthcare appointment booking system",
-  "main": "server.js",
+  "description": "Modern healthcare appointment booking web application",
+  "main": "index.html",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "echo 'Static site - no build needed'",
+    "serve": "echo 'Serving static files'"
   },
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5"
   },
-  "keywords": ["healthcare", "appointments", "node", "express"],
+  "keywords": ["healthcare", "appointments", "netlify", "serverless", "frontend"],
   "author": "Healthcare+",
   "license": "MIT"
 }
