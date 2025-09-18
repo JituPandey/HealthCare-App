@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthCare+ — Your Health, Our Priority</title>
+    <meta name="description" content="A clean, responsive healthcare web app for services, doctors, and appointments." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="home">
+      <div class="container nav-container">
+        <div class="brand">
+          <span class="logo" aria-hidden="true">✚</span>
+          <span class="brand-text">HealthCare<span class="accent">+</span></span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="primary-nav" class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="hero container">
+        <div class="hero-content">
+          <h1>Your Health, Our Priority</h1>
+          <p>Comprehensive, compassionate care from experienced specialists — book your appointment in minutes.</p>
+
+          <div class="cta-group">
+            <a class="btn btn-primary" href="#appointments">Book Appointment</a>
+            <a class="btn btn-ghost" href="#services">Explore Services</a>
+          </div>
+
+          <div class="search">
+            <label for="globalSearch" class="visually-hidden">Search doctors or services</label>
+            <input id="globalSearch" type="search" placeholder="Search doctors or services…" autocomplete="off" />
+          </div>
+        </div>
+        <div class="hero-illus" aria-hidden="true">
+          <!-- Animated Healthcare Illustration -->
+          <div class="animated-illustration">
+            <svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background circles -->
+              <circle cx="140" cy="140" r="130" fill="url(#gradient1)" opacity="0.1" class="pulse"/>
+              <circle cx="140" cy="140" r="100" fill="url(#gradient2)" opacity="0.15" class="pulse-delayed"/>
+              
+              <!-- Floating medical icons -->
+              <g class="float-1">
+                <circle cx="80" cy="80" r="18" fill="#e8f4fd" stroke="#2E7CF6" stroke-width="2"/>
+                <path d="M80 70v20M70 80h20" stroke="#2E7CF6" stroke-width="3" stroke-linecap="round"/>
+              </g>
+              
+              <g class="float-2">
+                <circle cx="200" cy="70" r="16" fill="#f0fdf4" stroke="#36C2AA" stroke-width="2"/>
+                <path d="M195 70l3 3 7-7" stroke="#36C2AA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              
+              <g class="float-3">
+                <circle cx="210" cy="180" r="15" fill="#fef3f2" stroke="#f97316" stroke-width="2"/>
+                <circle cx="210" cy="180" r="4" fill="#f97316"/>
+              </g>
+              
+              <g class="float-4">
+                <rect x="65" y="195" width="30" height="20" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+                <circle cx="73" cy="205" r="2" fill="#64748b"/>
+                <circle cx="87" cy="205" r="2" fill="#64748b"/>
+              </g>
+              
+              <!-- Central stethoscope -->
+              <g class="main-icon">
+                <circle cx="140" cy="120" r="25" fill="url(#gradient3)" stroke="#2E7CF6" stroke-width="3"/>
+                <path d="M140 95c15 0 25 15 25 25" stroke="#2E7CF6" stroke-width="4" stroke-linecap="round" fill="none"/>
+                <path d="M115 120c0-15 10-25 25-25" stroke="#2E7CF6" stroke-width="4" stroke-linecap="round" fill="none"/>
+                <circle cx="125" cy="110" r="3" fill="#2E7CF6"/>
+                <circle cx="155" cy="110" r="3" fill="#2E7CF6"/>
+                <path d="M125 110v40M155 110v40" stroke="#2E7CF6" stroke-width="3"/>
+                <circle cx="125" cy="150" r="4" fill="#36C2AA"/>
+                <circle cx="155" cy="150" r="4" fill="#36C2AA"/>
+              </g>
+              
+              <!-- DNA helix -->
+              <g class="dna-helix">
+                <path d="M60 220c10-5 20 5 30 0s20-5 30 0" stroke="#36C2AA" stroke-width="2" fill="none" opacity="0.6"/>
+                <path d="M60 225c10 5 20-5 30 0s20 5 30 0" stroke="#2E7CF6" stroke-width="2" fill="none" opacity="0.6"/>
+                <circle cx="75" cy="222.5" r="1.5" fill="#36C2AA"/>
+                <circle cx="105" cy="222.5" r="1.5" fill="#2E7CF6"/>
+              </g>
+              
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2E7CF6"/>
+                  <stop offset="100%" stop-color="#36C2AA"/>
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#36C2AA"/>
+                  <stop offset="100%" stop-color="#2E7CF6"/>
+                </linearGradient>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8f4fd"/>
+                  <stop offset="100%" stop-color="#f0fdf4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <!-- Services -->
+      <section id="services" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Our Services</h2>
+            <p>From preventive care to specialized treatments — we’ve got you covered.</p>
+          </header>
+
+          <div class="cards-grid" data-collection="services">
+            <article class="card service" data-name="General Checkup" data-tags="general, checkup, primary care">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </div>
+              <h3>General Checkup</h3>
+              <p>Routine wellness exams and personalized health advice.</p>
+            </article>
+
+            <article class="card service" data-name="Cardiology" data-tags="heart, cardio, ecg">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+                </svg>
+              </div>
+              <h3>Cardiology</h3>
+              <p>Advanced heart care including ECG, stress tests, and more.</p>
+            </article>
+
+            <article class="card service" data-name="Pediatrics" data-tags="children, kids, child health">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M5.5 22a6.5 6.5 0 0 1 13 0" />
+                </svg>
+              </div>
+              <h3>Pediatrics</h3>
+              <p>Gentle, comprehensive care for infants, children, and teens.</p>
+            </article>
+
+            <article class="card service" data-name="Dermatology" data-tags="skin, acne, dermatologist">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.2 7l3 3M16.8 14l3 3M2 12h4M18 12h4M4.2 17l3-3M16.8 10l3-3" />
+                </svg>
+              </div>
+              <h3>Dermatology</h3>
+              <p>Diagnosis and treatment of skin, hair, and nail conditions.</p>
+            </article>
+
+            <article class="card service" data-name="Orthopedics" data-tags="bones, joints, ortho">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+                  <path d="M12 2v6" />
+                </svg>
+              </div>
+              <h3>Orthopedics</h3>
+              <p>Expert care for bones, joints, and sports injuries.</p>
+            </article>
+
+            <article class="card service" data-name="Neurology" data-tags="brain, nerves, neuro">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 9a4 4 0 1 1 8 0v6a4 4 0 1 1-8 0z" />
+                  <path d="M12 3v3M12 18v3" />
+                </svg>
+              </div>
+              <h3>Neurology</h3>
+              <p>Specialized care for brain and nervous system disorders.</p>
+            </article>
+          </div>
+          <p class="no-results" data-for="services" hidden>No matching services found.</p>
+        </div>
+      </section>
+
+      <!-- Doctors -->
+      <section id="doctors" class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>Our Doctors</h2>
+            <p>Experienced, compassionate specialists across multiple disciplines.</p>
+          </header>
+
+          <div class="cards-grid" data-collection="doctors">
+            <article class="card doctor" data-name="Dr. Aisha Khan" data-tags="cardiology, heart" data-doctor-id="khan">
+              <div class="avatar avatar-animated" data-initials="AK" data-specialty="cardiology" aria-hidden="true">
+                <div class="avatar-bg"></div>
+                <div class="avatar-icon">💗</div>
+              </div>
+              <div class="card-body">
+                <h3>Dr. Aisha Khan</h3>
+                <p class="muted">Cardiologist</p>
+                <button class="btn btn-secondary book-btn" data-doctor="Dr. Aisha Khan">Book Appointment</button>
+              </div>
+            </article>
+
+            <article class="card doctor" data-name="Dr. John Smith" data-tags="pediatrics, children" data-doctor-id="smith">
+              <div class="avatar avatar-animated" data-initials="JS" data-specialty="pediatrics" aria-hidden="true">
+                <div class="avatar-bg"></div>
+                <div class="avatar-icon">👶</div>
+              </div>
+              <div class="card-body">
+                <h3>Dr. John Smith</h3>
+                <p class="muted">Pediatrician</p>
+                <button class="btn btn-secondary book-btn" data-doctor="Dr. John Smith">Book Appointment</button>
+              </div>
+            </article>
+
+            <article class="card doctor" data-name="Dr. Priya Patel" data-tags="dermatology, skin" data-doctor-id="patel">
+              <div class="avatar avatar-animated" data-initials="PP" data-specialty="dermatology" aria-hidden="true">
+                <div class="avatar-bg"></div>
+                <div class="avatar-icon">✨</div>
+              </div>
+              <div class="card-body">
+                <h3>Dr. Priya Patel</h3>
+                <p class="muted">Dermatologist</p>
+                <button class="btn btn-secondary book-btn" data-doctor="Dr. Priya Patel">Book Appointment</button>
+              </div>
+            </article>
+
+            <article class="card doctor" data-name="Dr. Miguel Garcia" data-tags="orthopedics, bones" data-doctor-id="garcia">
+              <div class="avatar avatar-animated" data-initials="MG" data-specialty="orthopedics" aria-hidden="true">
+                <div class="avatar-bg"></div>
+                <div class="avatar-icon">🦴</div>
+              </div>
+              <div class="card-body">
+                <h3>Dr. Miguel Garcia</h3>
+                <p class="muted">Orthopedic Surgeon</p>
+                <button class="btn btn-secondary book-btn" data-doctor="Dr. Miguel Garcia">Book Appointment</button>
+              </div>
+            </article>
+
+            <article class="card doctor" data-name="Dr. Emily Zhang" data-tags="neurology, brain" data-doctor-id="zhang">
+              <div class="avatar avatar-animated" data-initials="EZ" data-specialty="neurology" aria-hidden="true">
+                <div class="avatar-bg"></div>
+                <div class="avatar-icon">🧠</div>
+              </div>
+              <div class="card-body">
+                <h3>Dr. Emily Zhang</h3>
+                <p class="muted">Neurologist</p>
+                <button class="btn btn-secondary book-btn" data-doctor="Dr. Emily Zhang">Book Appointment</button>
+              </div>
+            </article>
+          </div>
+          <p class="no-results" data-for="doctors" hidden>No matching doctors found.</p>
+        </div>
+      </section>
+
+      <!-- Appointment Form -->
+      <section id="appointments" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Book an Appointment</h2>
+            <p>Fill out the form and we’ll confirm your appointment via email.</p>
+          </header>
+
+          <form id="appointmentForm" novalidate class="form">
+            <div class="grid-2">
+              <div class="field">
+                <label for="apName">Full Name</label>
+                <input id="apName" name="name" type="text" placeholder="Jane Doe" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="apEmail">Email</label>
+                <input id="apEmail" name="email" type="email" placeholder="jane@example.com" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="apPhone">Phone</label>
+                <input id="apPhone" name="phone" type="tel" placeholder="+1 555 123 4567" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="apDoctor">Select Doctor</label>
+                <select id="apDoctor" name="doctor" required>
+                  <option value="" disabled selected>Select a doctor</option>
+                  <option>Dr. Aisha Khan</option>
+                  <option>Dr. John Smith</option>
+                  <option>Dr. Priya Patel</option>
+                  <option>Dr. Miguel Garcia</option>
+                  <option>Dr. Emily Zhang</option>
+                </select>
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="apDate">Date</label>
+                <input id="apDate" name="date" type="date" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="apTime">Time</label>
+                <input id="apTime" name="time" type="time" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p id="apSuccess" class="success" role="status" hidden>Thank you! Your appointment request has been received.</p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>Contact Us</h2>
+            <p>Have a question? Send us a message and we’ll get back to you.</p>
+          </header>
+
+          <form id="contactForm" novalidate class="form">
+            <div class="grid-2">
+              <div class="field">
+                <label for="ctName">Full Name</label>
+                <input id="ctName" name="name" type="text" placeholder="Jane Doe" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+              <div class="field">
+                <label for="ctEmail">Email</label>
+                <input id="ctEmail" name="email" type="email" placeholder="jane@example.com" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="field">
+              <label for="ctMsg">Message</label>
+              <textarea id="ctMsg" name="message" rows="4" placeholder="How can we help?" required></textarea>
+              <small class="error" aria-live="polite"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="ctSuccess" class="success" role="status" hidden>Thanks! We’ll be in touch soon.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> HealthCare+. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    
+    <!-- Background Style Switcher (for demo) -->
+    <div class="bg-switcher">
+      <button class="bg-option" data-bg="glass" title="Glass Morphism">🌊</button>
+      <button class="bg-option" data-bg="mesh" title="Mesh Gradient">🎨</button>
+      <button class="bg-option" data-bg="minimal" title="Minimal Clean">⚪</button>
+      <button class="bg-option" data-bg="medical" title="Medical Theme">⚕️</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
